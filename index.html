@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="css/index.css">
+        <script src = "js/index.js"></script>
+        <script src = "js/audio.js"></script>
+        <title>Portfolio Website</title>
+    </head>
+    <body>
+        <header id = "header">
+            <div id = "titlePosition">
+                <div id = "titleWrap">
+                    <h1 id = "title">My Portfolio</h1>
+                </div>
+            </div>
+            <img loading = "lazy" class = "titleImage" src = "images/code.png" alt = "My Avatar">
+        </header>
+        <div id = "content">
+            <svg id = "wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="white" fill-opacity="1" d="M0,96L48,106.7C96,117,192,139,288,133.3C384,128,480,96,576,106.7C672,117,768,171,864,197.3C960,224,1056,224,1152,197.3C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+            <svg height = "0" width = "0" xmlns="http://www.w3.org/2000/svg">
+                <h1 id = "meTitle">About Me</h1>
+                <h3 id = "subTitle">"Changing the world one line of code at a time"</h3>
+                <defs>
+                    <clipPath id="blob">
+                        <path fill="#FF0066" d="M45.1,-74.6C59.3,-70,72.1,-59.5,80.9,-46.1C89.6,-32.7,94.3,-16.3,93.1,-0.7C91.9,15,84.9,30,74.8,41C64.6,52,51.4,59,38.4,64.9C25.4,70.8,12.7,75.7,0.7,74.5C-11.3,73.3,-22.6,66,-31.7,57.8C-40.7,49.6,-47.6,40.5,-51.7,30.7C-55.9,20.9,-57.3,10.5,-62.2,-2.8C-67.1,-16.2,-75.5,-32.3,-73,-44.8C-70.4,-57.3,-56.8,-66.1,-42.8,-70.7C-28.8,-75.4,-14.4,-75.9,0.5,-76.8C15.5,-77.7,31,-79.1,45.1,-74.6Z" transform="translate(100 100)" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <section id = "aboutMe">
+                <div id = "spaceman"></div>
+                <p>
+                    My name is Alex Nuzum. I'm a <span id = "age">0</span> year old software developer and web designer
+                    from Wexford, Ireland. I'm a second year computer science student at TU Dublin and I've <span id = "experienceTime">0</span> years of
+                    experience in web devlopment.
+                    I am passionate for web design and development and enjoy building cool web projects.
+                    I have a wide variety of skills ranging from HTML to Node.js.<br>
+                    My other hobbies include learning about science and technology, and I'm especially passionate about spaceflight and
+                    space related technolgies.
+                </p>
+                <p>
+                    This is my personal portfolio. All the projects I have ever built are listed
+                    on this page. A person is more than their skillset, so hopefully you will know more about me by the time
+                    you are finished here. Sit back, relax and enjoy the show!
+                </p>
+                <img loading = "lazy" id = "jupiter" src = "images/jupiter.svg" alt = "Jupiter">
+                <img loading = "lazy" id = "rocket" src = "images/rocket.svg" alt = "A small blue rocket akin to a childs toy">
+            </section>
+            <div id = "descriptors">
+                <div id = "dRight" class = "descriptorBox" data-overlay-text = "Meticulous">Commited</div>
+                <div id = "dDown" class = "descriptorBox" data-overlay-text = "Flexible">Driven</div>
+                <div id = "dUp" class = "descriptorBox" data-overlay-text = "Dependable">Creative</div>
+                <div id = "dLeft" class = "descriptorBox" data-overlay-text = "Imaginative">Honest</div>
+            </div>
+            <h1 class = "title">Skills</h1>
+            <div id = "marquee">
+                <div id = "marquee1" class = "marquee">
+                    <span title = "HTML5">
+                        <img loading = "lazy" src = "images/skillsIcons/html5.svg" alt = "HTML5 logo">
+                        <div class = "stars">
+                            ★★★★☆
+                        </div>
+                    </span>
+                    <span title = "CSS3">
+                        <img loading = "lazy" src = "images/skillsIcons/css3.svg" alt = "CSS3 logo">
+                        <div class = "stars">
+                            ★★★★☆
+                        </div>
+                    </span>
+                    <span title = "JavaScript">
+                        <img loading = "lazy" src = "images/skillsIcons/js.svg" alt = "JavaScript logo">
+                        <div class = "stars">
+                            ★★★★☆
+                        </div>
+                    </span>
+                    <span title = "jQuery">
+                        <img loading = "lazy" src = "images/skillsIcons/jquery.svg" alt = "jQuery logo">
+                        <div class = "stars">
+                            ★★★★☆
+                        </div>
+                    </span>
+                    <span title = "Node.js">
+                        <img loading = "lazy" src = "images/skillsIcons/nodejs.svg" alt = "Node.js logo"><br>
+                        <div class = "stars">
+                            ★★★☆☆
+                        </div>
+                    </span>
+                    <span title = "MaterializeCSS">
+                        <img loading = "lazy" src = "images/skillsIcons/materializecss.svg" alt = "MaterializeCSS logo"><br>
+                        <div class = "stars">
+                            ★★★☆☆
+                        </div>
+                    </span>
+                    <span title = "Socket.io">
+                        <img loading = "lazy" src = "images/skillsIcons/socketio.svg" alt = "Socket.io logo"><br>
+                        <div class = "stars">
+                            ★★★☆☆
+                        </div>
+                    </span>
+                    <span title = "Flutter App Dev">
+                        <img loading = "lazy" src = "images/skillsIcons/flutter.svg" alt = "Flutter logo"><br>
+                        <div class = "stars">
+                            ★★★★☆
+                        </div>
+                    </span>
+                </div>
+                <div id = "marquee2" class = "marquee">
+                    <span title = "C Programming">
+                        <img loading = "lazy" src = "images/skillsIcons/cprogramming.svg" alt = "C Programming icon">
+                        <div class = "stars">
+                            ★★★☆☆
+                        </div>
+                    </span>
+                    <span title = "Java Programming">
+                        <img loading = "lazy" src = "images/skillsIcons/java.svg" alt = "Java logo">
+                        <div class = "stars">
+                            ★★★☆☆
+                        </div>
+                    </span>
+                    <span title = "Program Design">
+                        <img loading = "lazy" src = "images/skillsIcons/flowchart.svg" alt = "Flowchart symbols">
+                        <div class = "stars">
+                            ★★★★★
+                        </div>
+                    </span>
+                    <span title = "Copywriting">
+                        <img loading = "lazy" src = "images/skillsIcons/copywriting.svg" alt = "Pen and paper graphic">
+                        <div class = "stars">
+                            ★★★★☆
+                        </div>
+                    </span>
+                    <span title = "Web Design">
+                        <img loading = "lazy" src = "images/skillsIcons/crop.svg" alt = "Design graphic with square rulers"><br>
+                        <div class = "stars">
+                            ★★★★☆
+                        </div>
+                    </span>
+                    <span title = "AngularJS">
+                        <img loading = "lazy" src = "images/skillsIcons/angularjs.svg" alt = "AngularJS logo"><br>
+                        <div class = "stars">
+                            ★☆☆☆☆
+                        </div>
+                    </span>
+                    <span title = "Python">
+                        <img loading = "lazy" src = "images/skillsIcons/python.svg" alt = "Python logo"><br>
+                        <div class = "stars">
+                            ★★☆☆☆
+                        </div>
+                    </span>
+                    <span title = "Github">
+                        <img loading = "lazy" src = "images/skillsIcons/github.svg" alt = "Github logo"><br>
+                        <div class = "stars">
+                            ★★★☆☆
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <h1 class = "title">Websites | Projects</h1>
+            <section id = "websites">
+                <div id = "leftCarousel" class = "carouselButton"><span>❮</span></div>
+                <div id = "rightCarousel" class = "carouselButton"><span>❯</span></div>
+                <div id = "carouselItems">
+                    <a href = "#" class = "carouselItem" title = "NebulaOS: A web based operating system I built" target = "_blank">
+                        <img loading = "lazy" src = "images/nebulaOS.png" alt = "A web based operating system I built">
+                        <div class = "viewWrap"><span class = "view">View</span></div>
+                    </a>
+                    <a href = "#" class = "carouselItem" title = "A website builder I built" target = "_blank">
+                        <img loading = "lazy" src = "images/websiteBuilder.png" alt = "A website builder I built">
+                        <div class = "viewWrap"><span class = "view">View</span></div>
+                    </a>
+                    <a href = "#" class = "carouselItem" title = "A website for my business ideas" target = "_blank">
+                        <img loading = "lazy" src = "images/nuzumNterprise.png" alt = "A watery background on a homepage">
+                        <div class = "viewWrap"><span class = "view">View</span></div>
+                    </a>
+                    <a href = "#" class = "carouselItem" title = "A space website I built for college" target = "_blank">
+                        <img loading = "lazy" src = "images/newSpace.png" alt = "A picture of Starman in Elon Musk's roadster">
+                        <div class = "viewWrap"><span class = "view">View</span></div>
+                    </a>
+                    <a href = "#" class = "carouselItem" target = "_blank" title = "A remote file view I built that allows you to transfer files from computer to another">
+                        <img loading = "lazy" src = "images/pfp.png" alt = "A list of files in a folder">
+                        <div class = "viewWrap"><span class = "view">View</span></div>
+                    </a>
+                    <a href = "#" class = "carouselItem" title = "A website I built for searching through multiple royalty free image websites" target = "_blank">
+                        <img loading = "lazy" src = "images/newsTonic.png" alt = "A list of nature images in a grid">
+                        <div class = "viewWrap"><span class = "view">View</span></div>
+                    </a>
+                    <a href = "#" class = "carouselItem" target = "_blank" title = "A simple webapp for creating documentation pages for your coding projects and APIs">
+                        <img loading = "lazy" src = "images/devCentre.png" alt = "A list of nature images in a grid">
+                        <div class = "viewWrap"><span class = "view">View</span></div>
+                    </a>
+                </div>
+            </section>
+            <!--Smaller projects
+                C:\Users\Gaming\Documents\projects\websites\oldWebsite\gamescrafter.com\gaussiantest
+                https://nterpriseceo.itch.io/give-us ???
+
+            -->
+            <h1 class = "title">Games</h1>
+            <section class = "projectSection">
+                <div class = "projectItem">
+                    <img loading = "lazy" src = "images/mountainLake.png" alt = "3D randomly generated low poly world">
+                    <div class = "lmWrap">
+                        <span class = "learnMore">Terrain Gen</span>
+                    </div>
+                    <div class = "projectDescription">
+                        <h1>Procedural Worlds</h1>
+                        <p>
+                            This is a procedural terain generation tool. It creates low poly mountainous terrain with
+                            lakes and rivers. This was originally planned to be a 3D space exploration game but browser
+                            technology has not advanced enough to be able to run the game efficiently.
+                        </p>
+                        <a class = "view" href = "http://new-space.info/spacecraft2D" target = "_blank">PLAY</a>
+                    </div>
+                </div>
+                <div class = "projectItem">
+                    <img loading = "lazy" src = "images/desert.png" alt = "The desert biome in my game">
+                    <div class = "lmWrap">
+                        <span class = "learnMore">Blue Origins</span>
+                    </div>
+                    <div class = "projectDescription">
+                        <h1>Blue Origins <span class = "wip">WIP</span></h1>
+                        <p>
+                            Blue Origins is an open world space exploration game. Players can explore precedurally generated planets
+                            and build rockets to go to others. Not only is the world procedurally generated, but so are the NPCs, mobs
+                            and ores! Each and every player experience is unique.
+                        </p>
+                        <a class = "view" href = "http://new-space.info/spacecraft2D" target = "_blank">PLAY</a>
+                    </div>
+                </div>
+                <div class = "projectItem">
+                    <img loading = "lazy" src = "images/giveUs.png" alt = "A small farm in a sidescroller world">
+                    <div class = "lmWrap">
+                        <span class = "learnMore">Give Us...</span>
+                    </div>
+                    <div class = "projectDescription">
+                        <h1>Give us...</h1>
+                        <p>
+                            Give Us... was a simple game I created with two other people during the inaugural Yogscast Game Jam.
+                        </p>
+                        <a class = "view" href = "https://nterpriseceo.itch.io/give-us" target = "_blank">PLAY</a>
+                    </div>
+                </div>
+                <div class = "projectItem">
+                    <img loading = "lazy" src = "images/mountainLake.png" alt = "The desert biome in my game">
+                </div>
+            </section>
+
+            <section id = "videos">
+                <h1 class = "title">Videos</h1>
+                <p>
+                    Here are some of the best videos I have made for my various projects.
+                </p>
+                <div>
+                    <div class = "videoBox">
+                        <div class="iframeWrap">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hN3elcLMm8g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class = "videoBox">
+                        <div class="iframeWrap">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xd5fbiEb3-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class = "videoBox">
+                        <div class="iframeWrap">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GpHLOMuW2Eg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class = "videoBox">
+                        <div class="iframeWrap">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9eOZckokk3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <h1 class = "title">Music</h1>
+            <section id = "music">
+                <p>Here are some music pieces I have writen for my videos and games</p>
+                <div class = "audioElement">
+                    <div class = "leftAudioWrap">
+                        <audio src = "audio/InterestingTitle.mp3" controls></audio>
+                        <canvas class = "audioVisual"></canvas>
+                        <div class = "audioInfo">
+                            <div class = "audioTitle">Interesting Title</div>
+                        </div>
+                        <div class = "audioPlayTime"></div>
+                    </div>
+                    <div class = "play">&#9658;</div>
+                </div>
+                <div class = "audioElement">
+                    <div class = "leftAudioWrap">
+                        <audio src = "audio/SpaceCraft.mp3" controls></audio>
+                        <canvas class = "audioVisual"></canvas>
+                        <div class = "audioInfo">
+                            <div class = "audioTitle">SpaceCraft</div>
+                        </div>
+                        <div class = "audioPlayTime"></div>
+                    </div>
+                    <div class = "play">&#9658;</div>
+                </div>
+            </section>
+
+            <h1 class = "title">Experience</h1>
+            <section id = "experienceWrap">
+                <div id = "background">
+                    <div class = "dottedLine"></div>
+                    <div class = "dottedLine secondLine"></div>
+                </div>
+                <div id = "experience">
+                    <div class = "experiencePanel start">
+                        <div class = "xpImage">
+                            <a href = "https://www.fusio.net/">
+                                <img loading = "lazy" class = "experienceImg" src = "images/cropped-favicon-192x192.png" alt = "Orange Letter F">
+                            </a>
+                        </div>
+                        <div class = "xpDescription">
+                            <h3><a href = "https://www.fusio.net/" title = "Website">Fusio Ltd.</a></h3>
+                            <p><i>Responsibilites:</i> I did some website design and maintenance for various clients.</p>
+                        </div>
+                        <span class = "year">November 2015</span>
+                    </div>
+                    <div class = "experiencePanel">
+                        <div class = "xpImage">
+                            <a href = "http://www.compudoc.ie/">
+                                <img loading = "lazy" class = "experienceImg" src = "images/compudoc-logo-FINAL.png" alt = "Computer store logo">
+                            </a>
+                        </div>
+                        <div class = "xpDescription">
+                            <h3><a href = "http://www.compudoc.ie/" title = "Website">Compudoc Arklow</a></h3>
+                            <p><i>Responsibilites:</i> I took stock and tested faulty office equipment (computers, printers etc.)</p>
+                        </div>
+                        <span class = "year">2015</span>
+                    </div>
+                    <div class = "experiencePanel notFirst end">
+                        <div class = "xpImage">
+                            <a href = "https://suredatum.com">
+                                <img loading = "lazy" class = "experienceImg" src = "images/suredatum-200x39.jpg" alt = "Computer store logo">
+                            </a>
+                        </div>
+                        <div class = "xpDescription">
+                            <h3><a href = "https://suredatum.com" title = "Website">Suredatum</a></h3>
+                            <p><i>Responsibilites:</i> I designed and developed components for customer facing enterprise web applications.</p>
+                        </div>
+                        <span class = "year">2019</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <h1>Contact me</h1>
+            <div id = "contact">
+                <div class = "contact">
+                    <div class = "contactLinks">
+                        <a href = "https://github.com/NterpriseCEO"><img loading = "lazy" class = "contactImg" src = "images/skillsIcons/github.svg" alt = "Github Octocat"></a>
+                    </div>
+                    <div class = "contactLinks">
+                        <a href = "https://github.com/NterpriseCEO">
+                            Github
+                        </a>
+                    </div><br>
+                    <div class = "contactLinks">
+                        <a  href = "https://twitter.com/NterpriseCEO"><img loading = "lazy" class = "contactImg" src = "images/twitter.svg" alt = "Twitter Bird"></a>
+                    </div>
+                    <div class = "contactLinks">
+                        <a href = "https://twitter.com/NterpriseCEO">
+                            Twitter
+                        </a>
+                    </div><br>
+                    <div class = "contactLinks">
+                        <a href = "https://www.linkedin.com/in/alex-nuzum-94184a148/"><img loading = "lazy" class = "contactImg" src = "images/linkedin.svg" alt = "Linkedin Logo"></a>
+                    </div>
+                    <div class = "contactLinks">
+                        <a href = "https://www.linkedin.com/in/alex-nuzum-94184a148/">
+                            Linkedin
+                        </a>
+                    </div>
+                </div>
+                <div class = "contact">
+                    <div class = "contactLinks">
+                        <img loading = "lazy" class = "contactImg" src = "images/email.svg" alt = "An outline of a envelope">
+                    </div>
+                    <div class = "contactLinks longText">
+                        <span>nuzumalex@gmail.com</span>
+                    </div><br>
+                    <div class = "contactLinks">
+                        <img loading = "lazy" class = "contactImg" src = "images/phone-call.svg" alt = "An old phone handset">
+                    </div>
+                    <div class = "contactLinks longText">
+                        <a href="tel:+353-87-3304391">+353 87 3304391</a>
+                    </div><br>
+                    <div class = "contactLinks">
+                        <img loading = "lazy" class = "contactImg" src = "images/Discord-Logo-Black.svg" alt = "An old phone handset">
+                    </div>
+                    <div class = "contactLinks longText">
+                        <span>NterpriseCEO#3150</span>
+                    </div>
+                </div>
+                <div id = "info">
+                    <div id = "infoInner">
+                        <p>
+                            Are you hiring? Need a freelance designer?
+                            Contact me on my social media accounts, Linkedin
+                            and email for more info!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--<div>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        Fandi Kurniawan on freeicons.io
+            HTML5: <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            CSS3: <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            JS: <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            jQuery: <a target="_blank" href="https://icons8.com/icons/set/jquery">JQuery icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            Node.js: <a target="_blank" href="https://icons8.com/icons/set/nodejs">Nodejs icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            MaterializeCSS: Iconify.design (Gil Barbara)
+            Socket.io: WorldVectorLogo
+            Babylon.js: By <a href="//commons.wikimedia.org/w/index.php?title=User:Deltakosh&amp;action=edit&amp;redlink=1" class="new" title="User:Deltakosh (page does not exist)">Deltakosh</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=83907412">Link</a>
+            C programming: <a target="_blank" href="https://icons8.com/icons/set/c-programming">C Programming icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            Java: <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            Flowcharts: <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            Copywriting: <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            Design: <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            AngularJS: Icons8
+            Heroku: <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            Github: <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            Linkedin: <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        -->
+        <script>
+            function calculateAge(birthday) {
+                var ageDifferenceMs = Date.now() - birthday.getTime();
+                var ageDate = new Date(ageDifferenceMs); // miliseconds from epoch
+                return Math.abs(ageDate.getUTCFullYear() - 1970);
+            }
+            document.getElementById("age").innerText = calculateAge(new Date("08/06/2000"));
+            document.getElementById("experienceTime").innerText = calculateAge(new Date("01/01/2012"));
+        </script>
+        <script src = "http://localhost:35729/livereload.js"></script>
+    </body>
+</html>
